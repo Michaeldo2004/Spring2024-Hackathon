@@ -1,0 +1,129 @@
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 5px white,
+        0 0 21px white,
+        0 0 42px green,
+        0 0 82px green,
+        0 0 92px green,
+        0 0 102px green,
+        0 0 151px green; 
+  }
+
+.neonTextYellow {
+    color: #fff;
+    text-shadow:
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px yellow,
+        0 0 82px yellow; 
+}
+  
+  /* Additional styling */
+  .image{
+            display: inline-block;
+            width: 50px; 
+            height: 50px;
+            margin: 0 10px; 
+            vertical-align: middle;
+        }
+        
+  body {
+    font-size: 18px;
+    font-family: "Vibur", sans-serif;
+    background-image: url("neonBG.webp");
+    background-size:cover;    
+    margin-bottom: 300px;
+  }  
+  
+  h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+    
+  h1 {
+      font-size: 4.2rem;
+  }
+    
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  hr {
+    width:1000px;
+    box-shadow:
+    0 0 2px white,
+    0 0 4px white,
+    0 0 8px rgb(0, 8, 255),
+    0 0 12px rgb(0, 8, 255),
+    0 0 102px rgb(0, 8, 255),
+    0 0 151px rgb(0, 8, 255);
+  }
+
+  .textBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  textarea {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .container {
+    margin-top: 20v;
+  }
+
+  select {
+    align-items: center;
+    margin: auto 47%;
+    background-color: black;
+    color: white;
+    border: 0;
+    text-shadow: 0 0 2px white,
+    0 0 4px white,
+    0 0 8px rgb(255, 0, 234),
+    0 0 12px rgb(255, 0, 234),
+    0 0 102px rgb(255, 0, 234),
+    0 0 151px rgb(255, 0, 234);
+  }
+
+
+  button {
+
+    margin-top: 30px;
+    margin: auto 48%;
+    background-color: transparent;
+    text-shadow: 0 0 2px white,
+    0 0 4px white,
+    0 0 8px rgb(0, 8, 255),
+    0 0 12px rgb(0, 8, 255),
+    0 0 102px rgb(0, 8, 255),
+    0 0 151px rgb(0, 8, 255);
+    border: 0;
+    color:white;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+#output {
+  margin:auto 20%;
+  color: #fff;
+  text-shadow:
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px yellow,
+        0 0 82px yellow,
+        0 0 92px yellow,
+        0 0 102px yellow,
+        0  0 151px yellow;
+}

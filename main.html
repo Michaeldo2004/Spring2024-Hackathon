@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="neon.css">
+</head>
+
+
+<body>
+<div class="container">
+    <!-- Title -->
+    <h1 class="neonText">
+          Neon-ify Your Text!
+    </h1>
+
+    <hr>
+    <h2 class="neonTextYellow">Select your color:</h2>
+    <select id="colors" onchange="colorChange()">
+        <option>Select here: </option>
+        <option>Purple</option>  <!--Fuchsia-->
+        <option>DeepPink</option>
+
+        <option>Yellow</option>
+        <option>Aqua</option>
+        <option>Green</option>
+    </select>
+    <h2 class="neonTextYellow">Enter your text:</h2> 
+    <form>
+        <label for="fname"></label>
+
+        <!-- User Enters Text -->
+        <div class="textBox">
+            <textarea id="text" rows="15" cols="65" placeholder="e.g. FullyHacks is very cool."></textarea>
+        </div>
+        <!-- Neon-ify Button-->
+        <div class="submit">
+        <button onClick="handleInput()">Neon-ify</button>
+        </div>
+      </form>
+
+      <hr>
+      <!-- Outputting the text in Neon -->
+      <h2 class="neonTextYellow">Your Text in Neon:</h2>
+      <div id="output">Your output will show here!</div>
+ </div>
+ <script>   
+
+    function colorChange() {
+        var colorSelect = document.getElementById("colors");
+        var selected = colorSelect.value;
+
+        colorSelect.style.textShadow = ` 
+        0 0 5px white,
+        0 0 21px white,
+        0 0 42px ${selected},
+        0 0 82px ${selected},
+        0 0 92px ${selected},
+        0 0 102px ${selected},
+        0 0 151px ${selected}`;
+    }
+    function handleInput() {
+        event.preventDefault();
+        let input = document.getElementById("text").value;
+        let output = document.getElementById("output"); 
+        output.innerHTML = neonifyText(input);
+    }
+    function neonifyText(output) {
+        var colorSelect = document.getElementById("colors");
+        var selected = colorSelect.value;
+
+        if(selected == 'Yellow'){
+        return `<span style="color: white; text-shadow:
+                0 0 7px white,
+                0 0 10px white,
+                0 0 42px ${selected},
+                0 0 82px ${selected},
+                0 0 92px ${selected};">${output}</span>`;
+        } else {
+            return `<span style="color: white; text-shadow:
+                0 0 7px white,
+                0 0 21px white,
+                0 0 42px ${selected},
+                0 0 82px ${selected},
+                0 0 92px ${selected},
+                0 0 102px ${selected},
+                0 0 151px ${selected},
+                0 0 180px ${selected};">${output}</span>`; 
+        }
+                
+    }
+ </script>
+
+ </body>
+ </html>
